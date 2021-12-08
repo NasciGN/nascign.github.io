@@ -1,0 +1,174 @@
+:root {
+    --bg:rgb(29, 28, 80);
+}
+body {
+    background: linear-gradient(160deg, #8b6ddf 0, #5451d2 50%, #002aaf 100%) center center no-repeat fixed;
+    height: 100vh;
+
+}
+
+.caixa {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    width: 30vw;
+    min-height: 20vh;
+}
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#sidebar {
+    /* don't forget to add all the previously mentioned styles here too */
+    background: linear-gradient(160deg, #8b6ddf 0, #5451d2 50%, #2e55d3 100%);
+    color: #fff;
+    transition: all 0.3s;
+    text-align: center;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.295);
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #8b6ddf;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 45px;
+    text-align: center;
+
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    border-bottom: 1px solid #ffffff13;
+}
+
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+    padding: 30px;
+    font-size: 15px;
+}
+
+.box-config {
+    text-align: center;
+}
+
+.main {
+    margin-top: 25px;
+    background: rgba(224, 218, 218, 0.63);
+    height: 140vh;
+    width: 130vh;
+    border-radius: 40px;
+    -webkit-box-shadow: 0px 17px 27px 14px rgba(0,0,0,0.32); 
+    box-shadow: 0px 17px 27px 14px rgba(0,0,0,0.32);
+}
+#titulo-2{
+    padding: 50px;
+    font-size: 70px;
+    font-family:BankGothic Md BT, sans-serif;
+    font-variant-caps: all-small-caps;
+}
+
+#apresent {
+    font-size: 30px;
+}
+
+.main p {
+    font-size: 20px;
+    line-height:25px;
+    width: 80%;
+    margin: auto;
+    color: #666666;
+
+}
+
+.main a {
+    text-decoration: none;
+    color: #CF541F;
+}
+
+.main a:hover {
+    text-decoration: none;
+    color: #ffd038;
+}
+
+
+.main button {
+    border: 0;
+    padding: 15px;
+    margin: 0px 25px 25px;
+    width: 150px;
+    font-family: 'Poppins', sans-serif;
+    background: rgb(255,143,0);
+    background: linear-gradient(90deg, rgba(255,143,0,1) 0%, rgba(243,255,0,1) 49%, rgba(255,143,0,1) 100%);
+    background-size: 200%;
+    transition: 0.3s;
+    border-radius: 50px;
+    color: #440568;
+}
+
+.main button:hover {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    background: rgb(255,143,0);
+    background: linear-gradient(90deg, rgba(255,143,0,1) 0%, rgba(243,255,0,1) 49%, rgba(255,143,0,1) 100%);
+    background-size: 200%;
+    background-position: -100px;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.295);
+}
+
+.main button:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.main img {
+    margin-top: 20px;
+    height: 50%;
+}
+
+
+footer {
+    text-transform: uppercase;
+    font-family:BankGothic Md BT, sans-serif;
+    font-variant-caps: all-small-caps;
+    position: absolute;
+    bottom: 5vh;
+    left: 15vh;
+}

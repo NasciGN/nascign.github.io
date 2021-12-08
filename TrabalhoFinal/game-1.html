@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Game 1</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo-index.css">
+    <link rel="stylesheet" href="css/estilo-game-1.css">
+  </head>
+  <body>
+    <script>
+      function calcular(){
+          var num = parseInt(document.getElementById("num").value);
+          var resposta = document.getElementById('resposta');
+          var tabuada='';
+          for(var count=1; count<=10 ; count++)
+
+              tabuada += num+" x "+count+" = "+
+              num*count+"<br />";
+
+      resposta.innerHTML = tabuada;
+      }
+
+      function limpaTela() {
+        var limpa = ''
+        var resposta = document.getElementById('resposta');
+
+        resposta.innerHTML = limpa;
+      }
+  </script>
+     <div class="caixa">
+       <!-- -->
+       <nav id="sidebar">
+         <div class="sidebar-header">
+           <h3>Menu</h3>
+         </div>
+         <ul class="list-unstyled components">
+            <li class="active">
+                <a href="index.html">Início</a>
+
+            </li>
+            <li>
+                <a href="game-1.html" >Tabuada: Qual o resultado?</a>
+            <li>
+                <a href="game-2.html">Brincando com Binários</a>
+            </li>
+            <li>
+                <a href="#">Contato</a>
+            </li>
+          </ul>
+          <footer>
+            <div>
+              Atividade final - programação - 2021
+            </div>
+          </footer>
+        </nav>
+        <div id="content">
+            <div class="container-fluid">
+              <header>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="header box-config">
+                      
+                    </div>
+                  </div>
+                </div>
+              </header>
+              <section class="">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="box-config main">
+    
+                      <h2 id="titulo-2">Tabuada</h2>
+    
+                      <p> A atividade pede para criar uma tabuada interativa, onde o usuário pode escolher qual numero deseja 
+                        obter a tabuada. <br> Pensando nisso, criei esse script que, ao digitar ou selecionar um número na caixa abaixo, a caixa cinza irá apresentar a tabuada do número escolhido.
+                      </p>
+    
+    
+                      <input id= "num" type="number"> <br>
+    
+                      <button onclick="calcular()" class="button calcula">Calcular</button>
+    
+                      <button onclick="limpaTela()" class="button limpa">Limpar</button> <br/>
+    
+                      <div class="resultado">
+                        <div id='resposta' style='display:inline'></div>
+                      </div>
+    
+                      
+                    </div>
+                  </div>
+                </div>
+              </section>
+          </div>
+        </div>
+      </div>
+
+
+
+   
+    
+  </body>
+</html>
